@@ -1,0 +1,16 @@
+<hr>
+<div class="row">
+
+    <div class="col-md-5">
+        <app-pedidos-list>
+        </app-pedidos-list>
+    </div>
+    <div class="col-md-7">
+        <app-pedidos-detail *ngIf="prodSeleccion; else infoText" [producto]="prodSeleccion">
+
+        </app-pedidos-detail>
+        <ng-template #infoText>
+            <p> Selecciona Producto </p>
+        </ng-template>
+    </div>
+</div>

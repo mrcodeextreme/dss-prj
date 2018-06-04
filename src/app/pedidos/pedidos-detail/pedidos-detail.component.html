@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-xs-12">
+
+        <img [src]="producto.dirImg" alt="{{ producto.nombre }}" class="img-responsive" style="max-height: 85px;">
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1> {{ producto.nombre }} </h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group" appDropdown>
+            <button type="button" class="btn btn-primary dropdown-toggle"> 
+          Administra Receta <span class="caret">  </span> 
+        </button>
+            <ul class="dropdown-menu">
+                <li><a appDropdown (click)="onAddToLista()" style="cursor: pointer;"> Agrega a Lista</a></li>
+                <li><a href="#" appDropdown> Edita Ingrediente </a></li>
+                <li><a href="#" appDropdown> Borra Ingrediente </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let prods of producto">
+                {{ producto.nombre }} - {{ producto.cantidad }}
+            </li>
+        </ul>
+    </div>
+</div>

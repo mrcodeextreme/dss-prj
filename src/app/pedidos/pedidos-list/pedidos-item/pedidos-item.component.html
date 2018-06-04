@@ -1,0 +1,10 @@
+<a href="#" class="list-group-item clearfix" (click)="onSelected()">
+    <div class="pull-left">
+        <h4 class="list-group-item-heading"> Name: {{ producto.nombre }}</h4>
+        <p class="list-group-item-text"> Cantidad: {{ producto.cantidad }}</p>
+
+    </div>
+    <span class="pull-rigth">
+    <img [src]="producto.dirImg" alt="{{ producto.nombre }}" class="img-responsive" style="max-height: 50px;">
+  </span>
+</a>
