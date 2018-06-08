@@ -13,14 +13,8 @@ import { PedidosListComponent } from './pedidos/pedidos-list/pedidos-list.compon
 import { PedidosItemComponent } from './pedidos/pedidos-list//pedidos-item/pedidos-item.component';
 import { PedidosDetailComponent } from './pedidos/pedidos-detail/pedidos-detail.component';
 import { PedidosService } from './pedidos/pedidos.service';
-
-const appRoutes: Routes = [
-
-  { path: '', component: HomeComponent },
-  { path: 'pedidos', component: PedidosComponent },
-  { path: 'planeacion-pedidos', component: PlaneacionPedidosComponent },
-
-];
+import { DropdownDirective } from './shared/dropdown.directive';
+import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -31,13 +25,14 @@ const appRoutes: Routes = [
     HomeComponent,
     PedidosListComponent,
     PedidosItemComponent,
-    PedidosDetailComponent
+    PedidosDetailComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   providers: [PedidosService],
   bootstrap: [AppComponent]
