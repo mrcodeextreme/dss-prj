@@ -7,17 +7,14 @@ import { PedidosService } from '../../pedidos.service';
   templateUrl: './pedidos-item.component.html',
   styleUrls: ['./pedidos-item.component.css']
 })
-export class PedidosItemComponent implements OnInit {
+export class PedidosItemComponent {
 
   @Input() producto: Producto;
 
   constructor(private pedidoServ: PedidosService) { }
 
-  ngOnInit() {
-  }
 
   onSelected() {
-    this.pedidoServ.prodSeleccion.emit(this.producto);
-
+   this.pedidoServ.prodSeleccion.emit(this.producto);
    }
 }

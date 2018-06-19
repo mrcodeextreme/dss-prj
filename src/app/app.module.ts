@@ -15,6 +15,8 @@ import { PedidosDetailComponent } from './pedidos/pedidos-detail/pedidos-detail.
 import { PedidosService } from './pedidos/pedidos.service';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { AppRoutingModule } from './app.routing';
+import { ProveedoresComponent } from './proveedores/proveedores.component';
+import { ContratosComponent } from './contratos/contratos.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { AppRoutingModule } from './app.routing';
     PedidosListComponent,
     PedidosItemComponent,
     PedidosDetailComponent,
-    DropdownDirective
+    DropdownDirective,
+    ProveedoresComponent,
+    ContratosComponent
   ],
   imports: [
     BrowserModule,

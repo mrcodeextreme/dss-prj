@@ -10,10 +10,13 @@ import { PedidosService } from '../pedidos.service';
 export class PedidosDetailComponent implements OnInit {
 
   @Input() producto: Producto;
+
   constructor(private pedidoServ: PedidosService) { }
 
   ngOnInit() {
+     // this.producto = this.pedidoServ.getProds();
   }
+
 
   onAddToLista() {
     // this.pedidoServ.addIngredientsToLista(this.recipe.ingredients);
