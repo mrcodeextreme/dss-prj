@@ -5,6 +5,7 @@ import { PlaneacionPedidosComponent } from './planeacion-pedidos/planeacion-pedi
 import { HomeComponent } from './home/home.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { ContratosComponent } from './contratos/contratos.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -12,6 +13,7 @@ const appRoutes: Routes = [
     {path: 'planeacion-pedidos', component: PlaneacionPedidosComponent},
     {path: 'proveedores', component: ProveedoresComponent},
     {path: 'contratos', component: ContratosComponent},
+    {path: 'dashboard', component: DashboardComponent},
 ];
 
 @NgModule({

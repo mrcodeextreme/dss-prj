@@ -17,6 +17,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { AppRoutingModule } from './app.routing';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { ContratosComponent } from './contratos/contratos.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ContratosComponent } from './contratos/contratos.component';
     PedidosDetailComponent,
     DropdownDirective,
     ProveedoresComponent,
-    ContratosComponent
+    ContratosComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
